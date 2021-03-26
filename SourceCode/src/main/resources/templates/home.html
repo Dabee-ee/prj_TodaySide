@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+    <title>Today Side</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2004329f9f.js"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- header -->
+<!--<header>-->
+<!--    <div class="logo">-->
+<!--        <i class="fas fa-home"></i><a href="#" class="logo">오늘의반찬</a>-->
+<!--    </div>-->
+
+<!--    <ul>-->
+<!--        <li><a href="#">HOME</a></li>-->
+<!--        <li><a href="#">MENU</a></li>-->
+<!--        <li><a href="#">What's New</a></li>-->
+<!--        <li><a href="#">Contact</a></li>-->
+<!--    </ul>-->
+<!--</header>-->
+
+
+<!-- 메뉴바-->
+    <nav class="navbar">
+            <ul class="nav__action">
+                <li>
+                    <form><input type="text" th:name="search" placeholder="상품 검색"></form>
+                    <!--            <a class="btn btn-s btn-info" href="/items">상품 목록</a>-->
+                </li>
+                <li>
+                    <a class="btn btn-s btn-info" href="/orders">장바구니</a>
+                </li>
+                <li>
+                    <a class="btn btn-s btn-info" href="/login" >로그인</a>
+                </li>
+                <li>
+                    <a class="btn btn-s btn-info" href="/members/new" >회원 가입</a>
+                </li>
+                <li>
+                    <a class="btn btn-s btn-info" href="/write/new" >글쓰기</a>
+                </li>
+                <li>
+                <a class="btn btn-s btn-info" href="/items/new">상품 등록</a>
+                </li>
+            </ul>
+    </nav>
+
+<br>
+<hr>
+<div id="menu">
+    <ul class="nav">
+        <li>
+            <a href="write">커뮤니티</a>
+<!--            <ul>-->
+
+<!--                <li>-->
+<!--                    <a href="CommunityHome">홈</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">사진</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">집들이</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">노하우</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+        </li>
+        <li>
+            <a href="#">스토어</a>
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="#">스토어 홈</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">카테고리</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">오늘의 딜</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">베스트</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">기획전</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+        </li>
+        <li>
+            <a href="/write">게시판</a>
+<!--            <ul>-->
+<!--                <li>-->
+<!--                    <a href="#">리뷰</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">노하우</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">집들이</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#">전문가</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+</div>
+<hr>
+
+<div id="mainfood">
+    <a href="#"><img src="img/nabe.jpg" width="1200px"></a>
+
+
+</div>
+
+<!--<c:catch>-->
+<!--    <c:choose>-->
+<!--        <c:when test="${empty authInfo }">-->
+<!--            <li>-->
+<!--                <a href="/login"><i class="fa fa-sign-in"></i> 로그인</a>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <a href="/register/step1"><i class="fa fa-user"></i> 회원가입</a>-->
+<!--            </li>-->
+<!--        </c:when>-->
+<!--        <c:otherwise>-->
+<!--            <c:choose>-->
+<!--                <c:when test="${authInfo.grade eq '1' }">-->
+<!--                    <li>-->
+<!--                        <p>관리자 ${authInfo.name }님, 환영합니다.</p>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="/logout"><i class="fa fa-sign-out"></i> 로그아웃</a>-->
+<!--                    </li>-->
+<!--                </c:when>-->
+<!--                <c:otherwise>-->
+<!--                    <li>-->
+<!--                        <p>${authInfo.name }님, 반갑습니다!</p>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <a href="/logout"><i class="fa fa-sign-out"></i> 로그아웃</a>-->
+<!--                    </li>-->
+<!--                </c:otherwise>-->
+<!--            </c:choose>-->
+<!--        </c:otherwise>-->
+<!--    </c:choose>-->
+<!--</c:catch>-->
+
+
+
+
+</body>
+
+</html>

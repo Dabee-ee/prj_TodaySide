@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <div>
+        <table class="table table-striped">
+            <tbody>
+            <tr th:each="write : ${write}">
+                <th th:text="${write.id}"></th>
+                <th th:text="${write.title}"></th>
+                <th th:file="${write.attach}" class="fileImage"></th>
+                <th th:text="${write.content}"></th>
+                <th>
+                    <a href="#" th:href="@{/write/{id}/edit (id=${write.id})}"
+                       class="btn btn-primary" role="button">수정</a>
+                </th>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div th:replace="fragments/footer :: footer"/>
+</div> <!-- /container -->
+</body>
+</html>

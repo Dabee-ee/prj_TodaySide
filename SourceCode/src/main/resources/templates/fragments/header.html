@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="header">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrinkto-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-
+ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="/css/jumbotron-narrow.css" rel="stylesheet">
+    <title>오늘의 반찬</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 8px 8px;
+        }
+
+        .nav__logo {
+            justify-items: left;
+        }
+
+        .nav__action li {
+            display: flex;
+            float: left;
+            margin: 8px 12px;
+            list-style: none;
+        }
+
+
+        #menu {
+            width : 1000px;
+            height : 40px;
+        }
+
+        .nav {
+            float : left;
+            width : 1000px;
+            margin : 0px;
+            padding : 0px;
+            list-style : none;
+            background : white;
+        }
+
+        .nav li {
+            display : inline;
+        }
+
+        .nav li a {
+            float: left;
+            line-height : 40px;
+            color : black;
+            text-decoration : none;
+            margin : 0px;
+            padding : 0px 30px;
+        }
+
+        .nav li:hover>a{
+            color :#35c5f0;
+        }
+        .nav ul {
+            display:none;}
+
+
+
+
+        .nav li:hover>ul {
+            position : absolute;
+            display : block;
+            width : 1000px;
+            height: 50px;
+            margin-top : 40px;
+            background : white;
+        }
+
+        .action-nav {
+
+            padding: 0px 0px 0px 300px;
+
+        }
+        .action-nav li{
+            float: left;
+            list-style : none;
+            padding: 0px 10px;
+        }
+
+        .fileImage {
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+
+
+

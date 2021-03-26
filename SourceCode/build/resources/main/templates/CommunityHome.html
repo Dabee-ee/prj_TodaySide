@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+    <title>Today Side</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+
+<!-- 메뉴바-->
+<div id="action" >
+    <a href="/"><img src="img/today_side.png" width="150px" vspace="10px" hspace="10px"></a>
+    <ul class="action-nav">
+        <li>
+            <form><input type="text" th:name="search" placeholder="상품 검색"></form>
+<!--            <a class="btn btn-s btn-info" href="/items">상품 목록</a>-->
+        </li>
+        <li>
+            <a class="btn btn-s btn-info" href="/orders">장바구니</a>
+        </li>
+        <li>
+            <a class="btn btn-s btn-info" href="/" >로그인</a>
+        </li>
+        <li>
+            <a class="btn btn-s btn-info" href="/members/new" >회원 가입</a>
+        </li>
+        <li>
+            <a class="btn btn-s btn-info" href="/" >글쓰기</a>
+        </li>
+    </ul>
+</div>
+
+<br>
+<hr>
+<div id="menu">
+    <ul class="nav">
+        <li>
+            <a href="CommunityHome">커뮤니티</a>
+            <ul>
+
+                <li>
+                    <a href="CommunityHome">홈</a>
+                </li>
+                <li>
+                    <a href="#">사진</a>
+                </li>
+                <li>
+                    <a href="#">집들이</a>
+                </li>
+                <li>
+                    <a href="#">노하우</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">스토어</a>
+            <ul>
+                <li>
+                    <a href="#">스토어 홈</a>
+                </li>
+                <li>
+                    <a href="#">카테고리</a>
+                </li>
+                <li>
+                    <a href="#">오늘의 딜</a>
+                </li>
+                <li>
+                    <a href="#">베스트</a>
+                </li>
+                <li>
+                    <a href="#">기획전</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">게시판</a>
+            <ul>
+                <li>
+                    <a href="#">리뷰</a>
+                </li>
+                <li>
+                    <a href="#">노하우</a>
+                </li>
+                <li>
+                    <a href="#">집들이</a>
+                </li>
+                <li>
+                    <a href="#">전문가</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Contact Us</a>
+        </li>
+    </ul>
+</div>
+<hr>
+
+<div id="mainfood">
+    <a href="#"><img src="img/eclair.jpg" width="1200px"></a>
+
+
+</div>
+
+
+</body>
+</html>

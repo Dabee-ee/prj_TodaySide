@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header" />
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader"/>
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>게시글 번호</th>
+                <th>제목</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="write : ${writes}">
+                <td th:text="${write.id}"></td>
+                <td><a th:href="@{/write/{id} (id=${write.id})}" th:text="${write.title}"></a></td>
+                <td>
+                    <a href="#" th:href="@{/write/{id}/edit (id=${write.id})}"
+                       class="btn btn-primary" role="button">수정</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div th:replace="fragments/footer :: footer"/>
+</div> <!-- /container -->
+</body>
+</html>
